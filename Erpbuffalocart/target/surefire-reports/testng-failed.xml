@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testcases.Loginpage">
+        <methods>
+          <include name="urlVerification"/>
+          <include name="rememberedPasswordVerification"/>
+          <include name="afterTest"/>
+          <include name="loginVerificationcorrectvalues"/>
+          <include name="loginVerificationrememberme"/>
+          <include name="getyourAccountVerification"/>
+          <include name="loginVerificationwithblankfields"/>
+          <include name="beforeTest"/>
+          <include name="signinRegisterVerification"/>
+          <include name="displayUsernamePassword"/>
+          <include name="forgotPasswordVerification"/>
+          <include name="loginVerificationInvalidUsername"/>
+          <include name="loginVerificationInvalidUserPassword"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="loginVerificationInvalidPassword"/>
+          <include name="logoutVerification"/>
+        </methods>
+      </class> <!-- testcases.Loginpage -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
